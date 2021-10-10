@@ -1,0 +1,28 @@
+class student:
+    marks=[]
+    def getdata(self,rn,name,m1,m2,m3):
+        student.rn = rn
+        student.name = name
+        student.marks.append(m1)
+        student.marks.append(m2)
+        student.marks.append(m3)
+
+        def displaydata(self):
+            print("Roll no is :",student.rn)
+            print("name is :",student.name)
+            print("marks is subject1:",student.marks[0])
+            print("marks are :",student.marks)
+
+            def total(self):
+                return (student.marks[0] + student.marks[1] + student.marks[2])
+
+            r = int(input("enter the roll no:"))
+            name = intput("enter the name:")
+            m1=int(input("enter the marks in frist subject:"))
+            m2= int(input("enter the marks in second subject:"))
+            m3=int(input("enter the marks in thrid subject:"))
+
+            s1=student()
+            s1.getdata(r,name,m1,m2,m3)
+            s1.displaydata()
+            print("Total marks are:",s1.total())
